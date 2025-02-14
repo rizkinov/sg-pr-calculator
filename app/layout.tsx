@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <footer className="text-center text-sm text-gray-500 py-4">
-          Last Updated: February 2025. This tool is for educational purposes only.
+          Last Updated: February 2025
         </footer>
       </body>
     </html>
