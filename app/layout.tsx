@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import { GeistSans } from 'next/font/geist'
+import { geistSans } from './lib/fonts'
 import './globals.css'
-
-const geistSans = GeistSans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'SG PR Calculator',
@@ -16,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={geistSans.className}>{children}</body>
+      <body className={geistSans.className}>
+        {children}
+      </body>
     </html>
   )
 } 
