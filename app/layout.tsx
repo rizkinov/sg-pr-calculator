@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { GeistSans } from 'next/font/geist'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const geistSans = GeistSans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Singapore PR Eligibility Calculator',
-  description: 'Calculate your estimated Singapore PR eligibility score',
-  metadataBase: new URL('https://sg-pr-calculator.vercel.app'),
+  title: 'SG PR Calculator',
+  description: 'Singapore PR Application Points Calculator',
 }
 
 export default function RootLayout({
@@ -17,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={geistSans.className}>{children}</body>
     </html>
   )
 } 
