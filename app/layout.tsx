@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Singapore PR Eligibility Calculator',
   description: 'Calculate your estimated Singapore PR eligibility score',
-  metadataBase: new URL('https://your-domain.com'),
+  metadataBase: new URL('https://sg-pr-calculator.vercel.app'),
 }
 
 export default function RootLayout({
