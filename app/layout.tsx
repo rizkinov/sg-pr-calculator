@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { geistSans } from '@/lib/fonts'
+import { inter } from '@/lib/fonts'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={geistSans.className}>
+      <body className={inter.className}>
         {children}
       </body>
     </html>

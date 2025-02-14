@@ -1,5 +1,5 @@
-import { GeistSans } from 'next/font/geist'
+import { Inter } from 'next/font/google'
 
-export const geistSans = GeistSans({ 
+export const inter = Inter({ 
   subsets: ['latin'] 
 }) 
