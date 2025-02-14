@@ -308,7 +308,7 @@ export default function Home() {
         </div>
 
         <p className="text-xs">
-          Last Updated: February 2024. This tool is for educational purposes only.
+          Last Updated: February 2025. This tool is for educational purposes only.
         </p>
       </div>
     </main>
