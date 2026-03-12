@@ -5,11 +5,14 @@ export interface FormData {
   yearsInSingapore: number;
   maritalStatus: string;
   educationLevel: string;
-  jobType: string;
+  industry: string;
+  workPassType: string;
+  communityInvolvement: string;
+  childrenInLocalSchool: boolean;
 }
 
 export interface ScoreResult {
   score: number;
   category: string;
   details: string[];
-} 
+}
