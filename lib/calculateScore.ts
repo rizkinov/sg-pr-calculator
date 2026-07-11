@@ -204,6 +204,10 @@ export function calculateScore(input: ScoreInput): ScoreResult {
       score += 2
       details.push("Dependant's Pass / LTVP holder: +2 points")
       break
+    case 'student':
+      score += 1
+      details.push("Student Pass holder: +1 point")
+      break
     default:
       score += 1
       details.push("Other pass type: +1 point")

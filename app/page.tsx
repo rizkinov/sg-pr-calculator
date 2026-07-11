@@ -64,18 +64,22 @@ export default function Home() {
   }
 
   return (
-    <main className="container mx-auto px-4 py-8 max-w-2xl">
-      <h1 className="text-2xl font-bold mb-2 text-center">
-        Singapore PR Eligibility Calculator
-      </h1>
-      <p className="text-sm text-gray-500 mb-1 text-center">
-        Updated for 2026
-      </p>
-
-      <div className="text-sm text-gray-500 mb-6 text-center">
-        This calculator provides an unofficial estimate based on publicly known assessment factors.
-        We do not store your data. Your inputs are processed locally on your device.
-      </div>
+    <main className="container mx-auto px-6 py-10 max-w-2xl min-h-dvh">
+      <header className="mb-8">
+        <a
+          href="https://www.lifekit.sg"
+          className="font-mono text-xs tracking-widest uppercase text-neutral-500 hover:text-[#b5484d] transition-colors"
+        >
+          lifekit.sg / immigration
+        </a>
+        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mt-3 mb-3">
+          Singapore PR Eligibility Calculator
+        </h1>
+        <p className="text-sm text-gray-500 max-w-xl text-pretty">
+          An unofficial estimate based on publicly known assessment factors, updated July 2026.
+          We do not store your data — your inputs are processed locally on your device.
+        </p>
+      </header>
 
       <Card className="p-6">
         <Form {...form}>
@@ -115,7 +119,7 @@ export default function Home() {
                     />
                   </FormControl>
                   <FormDescription>
-                    Most successful applicants earn S$6,000-S$10,000+. EP minimum salary from Jan 2026: S$5,600.
+                    Most successful applicants earn S$6,000-S$10,000+. EP minimum salary from Jan 2026: S$5,600 (rising to S$6,000 for new applications from 1 Jan 2027).
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -352,7 +356,9 @@ export default function Home() {
           <h2 className="text-xl font-semibold mb-4">Results</h2>
           <div className="space-y-4">
             <div>
-              <div className="text-3xl font-bold">{result.score}/105</div>
+              <div className="text-4xl font-semibold tabular-nums tracking-tight">
+                {result.score}<span className="text-xl text-gray-400">/105</span>
+              </div>
               <div className={`text-lg font-medium ${
                 result.category === 'Highly Likely' ? 'text-green-600' :
                 result.category === 'Likely' ? 'text-blue-600' :
@@ -471,7 +477,7 @@ export default function Home() {
             <li>35,264 PRs granted in 2024 (14-year high); ~33,000-35,000 granted annually</li>
             <li>Total PR population stable at ~540,000 (replacement model)</li>
             <li>Singapore TFR at historic low of 0.97; median citizen age 43.7</li>
-            <li>EP minimum salary from Jan 2026: S$5,600 (S$6,200 for financial sector)</li>
+            <li>EP minimum salary from Jan 2026: S$5,600 (S$6,200 for financial sector); MOM has announced an increase to S$6,000 for new applications from 1 Jan 2027</li>
             <li>New REP rules from Dec 2025: 180-day grace period, no reinstatement</li>
           </ul>
         </div>
@@ -488,7 +494,17 @@ export default function Home() {
         </div>
 
         <p className="text-xs">
-          Last Updated: March 2026. This tool is for educational purposes only.
+          Last Updated: July 2026. This tool is for educational purposes only.
+        </p>
+        <p className="text-xs pt-2 border-t border-gray-200">
+          Part of{' '}
+          <a
+            href="https://www.lifekit.sg"
+            className="underline underline-offset-2 hover:text-[#b5484d] transition-colors"
+          >
+            lifekit.sg
+          </a>{' '}
+          — free tools for living in Singapore.
         </p>
       </div>
     </main>
