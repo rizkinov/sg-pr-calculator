@@ -26,11 +26,20 @@ import {
 import { calculateScore } from '@/lib/calculateScore'
 import type { ScoreResult } from '@/lib/types'
 
+// zod 4 reworded its default error messages. These keep the wording the form
+// showed under zod 3 (an emptied number box gives NaN through parseInt).
+const number = () =>
+  z.number({
+    error: (issue) => (Number.isNaN(issue.input) ? 'Expected number, received nan' : undefined),
+  })
+const atLeast = (min: number) => `Number must be greater than or equal to ${min}`
+const atMost = (max: number) => `Number must be less than or equal to ${max}`
+
 const formSchema = z.object({
-  age: z.number().min(18).max(80),
-  monthlyIncome: z.number().min(0),
+  age: number().min(18, atLeast(18)).max(80, atMost(80)),
+  monthlyIncome: number().min(0, atLeast(0)),
   nationality: z.string(),
-  yearsInSingapore: z.number().min(0),
+  yearsInSingapore: number().min(0, atLeast(0)),
   maritalStatus: z.enum(['sg_spouse', 'sg_child', 'sg_parent', 'none']),
   educationLevel: z.string(),
   industry: z.string(),
