@@ -42,8 +42,14 @@ export function calculateScore(input: ScoreInput): ScoreResult {
 
   // Monthly Income scoring (0-20 points)
   // Based on: Most successful applicants earn S$6,000-S$10,000+.
-  // EP minimum salary from Jan 2026: S$5,600 (non-financial), S$6,200 (financial).
   // No official minimum for PR, but salary is one of the most heavily weighted factors.
+  // These brackets do not use MOM's EP qualifying salary, so the score is the same
+  // before and after the 1 Jan 2027 change. For context, MOM's EP qualifying salary
+  // (https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility):
+  //   new applications before 1 Jan 2027 (renewals expiring before 1 Jan 2028):
+  //     S$5,600, financial services S$6,200, rising with age to S$10,700 / S$11,800 at 45+
+  //   new applications from 1 Jan 2027 (renewals expiring from 1 Jan 2028):
+  //     S$6,000, financial services S$6,600, rising with age to S$11,500 / S$12,700 at 45+
   if (input.monthlyIncome >= 15000) {
     score += 20
     details.push("Income ≥S$15,000: +20 points (very strong economic contribution)")

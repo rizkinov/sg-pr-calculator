@@ -85,7 +85,7 @@ This calculator uses an unofficial scoring system based on publicly known factor
 - 35,264 PRs granted in 2024 (14-year high); ~33,000-35,000 granted annually
 - Total PR population stable at ~540,000 (replacement model, not expansion)
 - Singapore TFR at historic low of 0.97; median citizen age 43.7
-- EP minimum salary from Jan 2026: S$5,600 (S$6,200 for financial sector)
+- EP qualifying salary: S$5,600 (S$6,200 in financial services) for new applications until 31 Dec 2026; S$6,000 (S$6,600) for new applications from 1 Jan 2027 and for renewals of passes expiring from 1 Jan 2028. Both rise with age, up to S$11,500 (S$12,700) at 45 and above. The income score does not use these figures, so it is the same before and after 1 Jan 2027.
 - New REP rules from Dec 2025: 180-day grace period, no reinstatement
 
 ## Disclaimer
@@ -95,13 +95,14 @@ This tool provides unofficial estimates only and should not be considered as off
 ## Sources
 - [ICA — Becoming a Permanent Resident](https://www.ica.gov.sg/reside/PR)
 - [MOM — Work Passes & Permits](https://www.mom.gov.sg/passes-and-permits)
+- [MOM: Employment Pass eligibility and qualifying salary](https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility)
 - [TIP — PR Approval Rate 2024](https://tip.com.sg/resource/singapore-pr-approvals-hit-14-year-high-what-the-2025-statistics-mean-for-your-2026-application/)
 - [Transform Borders — PR Requirements 2026](https://transformborders.com/pr-application-requirements-singapore/)
 - [HCS Immigration — PR Approval Trends 2025-2026](https://www.hcsimmigration.com/post/singapore-pr-approval-trends-2025-2026-guide-latest-data-what-applicants-should-know)
 - [Singapore Top Immigration — PR Salary Benchmarks](https://singaporetopimmigration.sg/does-your-salary-affect-your-singapore-pr-approval/)
 
 ## Last Updated
-March 2026
+November 2026
 
 ## Getting Started
 

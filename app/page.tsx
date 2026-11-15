@@ -76,7 +76,7 @@ export default function Home() {
           Singapore PR Eligibility Calculator
         </h1>
         <p className="text-sm text-gray-500 max-w-xl text-pretty">
-          An unofficial estimate based on publicly known assessment factors, updated July 2026.
+          An unofficial estimate based on publicly known assessment factors, updated November 2026.
           We do not store your data — your inputs are processed locally on your device.
         </p>
       </header>
@@ -119,7 +119,7 @@ export default function Home() {
                     />
                   </FormControl>
                   <FormDescription>
-                    Most successful applicants earn S$6,000-S$10,000+. EP minimum salary from Jan 2026: S$5,600 (rising to S$6,000 for new applications from 1 Jan 2027).
+                    Most successful applicants earn S$6,000-S$10,000+. The EP qualifying salary for new applications is S$5,600 (S$6,200 in financial services) until 31 Dec 2026 and S$6,000 (S$6,600) from 1 Jan 2027. It is higher for older applicants.
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -422,6 +422,16 @@ export default function Home() {
                 Ministry of Manpower (MOM) — Work Passes & Permits
               </a>
             </li>
+            <li>
+              <a
+                href="https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                MOM: Employment Pass qualifying salary
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -477,7 +487,7 @@ export default function Home() {
             <li>35,264 PRs granted in 2024 (14-year high); ~33,000-35,000 granted annually</li>
             <li>Total PR population stable at ~540,000 (replacement model)</li>
             <li>Singapore TFR at historic low of 0.97; median citizen age 43.7</li>
-            <li>EP minimum salary from Jan 2026: S$5,600 (S$6,200 for financial sector); MOM has announced an increase to S$6,000 for new applications from 1 Jan 2027</li>
+            <li>EP qualifying salary: S$5,600 (S$6,200 in financial services) for new applications until 31 Dec 2026. From 1 Jan 2027 it is S$6,000 (S$6,600) for new applications, and for renewals of passes expiring from 1 Jan 2028. Both rise with age, up to S$11,500 (S$12,700) at 45 and above.</li>
             <li>New REP rules from Dec 2025: 180-day grace period, no reinstatement</li>
           </ul>
         </div>
@@ -494,7 +504,7 @@ export default function Home() {
         </div>
 
         <p className="text-xs">
-          Last Updated: July 2026. This tool is for educational purposes only.
+          Last Updated: November 2026. This tool is for educational purposes only.
         </p>
         <p className="text-xs pt-2 border-t border-gray-200">
           Part of{' '}
